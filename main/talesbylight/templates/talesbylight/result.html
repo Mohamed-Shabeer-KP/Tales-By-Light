@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Votes</title>
+        
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <body>
+    <div class='p-5'>
+        <center><h2>Votes</h2></center>
+        <table class="table table-bordered">
+        <thead>
+        <tr>
+        <th scope="col"> Image Number </th>
+        <th scope="col"> Frequency </th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i,j in votes %}
+        <tr><td>{{ i }}</td> <td>{{ j }}</td></tr>
+        {% endfor %}
+        </tbody>
+        </table>
+    </div>
+    </body>
+</html>

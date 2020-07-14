@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tales by light</title>
+
+    {% load static %}
+
+    <link rel="icon" type="image/png" sizes="212x154" href="{% static 'assets/img/site/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/lightbox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/dropdown.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><img src="{% static 'assets/img/site/nav_logo.png' %}" style="width: 100px;">
+            <img src="{% static 'assets/img/site/event_name.png' %}" style="width: 150px;">
+        </div>
+    </nav>
+    <main class="page projets-page">
+        <section class="portfolio-block projects compact-grid" style="padding-top: 50px;margin-top: 40px;">
+            <div class="alert alert-success" role="alert" style="margin-top: 0px;margin-bottom: 50px;"><span class="d-lg-flex justify-content-lg-start">
+            
+            {% if messages %}
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+            {% else %}
+                Welcome to Tales by light - Photo Contest conducted as part of Zreyas quarantine fest. Please vote at the end.
+            {% endif %}
+            
+            </span></div>
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/1.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/1.jpg"><span class="description"><span class="description-heading">1</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/2.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/2.jpg"><span class="description"><span class="description-heading">2</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/3.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/3.jpg"><span class="description"><span class="description-heading">3</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/4.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/4.jpg"><span class="description"><span class="description-heading">4</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/5.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/5.jpg"><span class="description"><span class="description-heading">5</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/6.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/6.jpg"><span class="description"><span class="description-heading">6</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/7.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/7.jpg"><span class="description"><span class="description-heading">7</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/8.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/8.jpg"><span class="description"><span class="description-heading">8</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/9.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/9.jpg"><span class="description"><span class="description-heading">9</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/10.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/10.jpg"><span class="description"><span class="description-heading">10</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/11.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/11.jpg"><span class="description"><span class="description-heading">11</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/12.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/12.jpg"><span class="description"><span class="description-heading">12</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/13.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/13.jpg"><span class="description"><span class="description-heading">13</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/14.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/14.jpg"><span class="description"><span class="description-heading">14</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/15.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/15.jpg"><span class="description"><span class="description-heading">15</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/16.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/16.jpg"><span class="description"><span class="description-heading">16</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/17.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/17.jpg"><span class="description"><span class="description-heading">17</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/18.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/18.jpg"><span class="description"><span class="description-heading">18</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/19.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/19.jpg"><span class="description"><span class="description-heading">19</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/20.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/20.jpg"><span class="description"><span class="description-heading">20</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/21.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/21.jpg"><span class="description"><span class="description-heading">21</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/22.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/22.jpg"><span class="description"><span class="description-heading">22</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/23.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/23.jpg"><span class="description"><span class="description-heading">23</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/24.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/24.jpg"><span class="description"><span class="description-heading">24</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/25.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/25.jpg"><span class="description"><span class="description-heading">25</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/26.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/26.jpg"><span class="description"><span class="description-heading">26</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/27.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/27.jpg"><span class="description"><span class="description-heading">27</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/28.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/28.jpg"><span class="description"><span class="description-heading">28</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/29.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/29.jpg"><span class="description"><span class="description-heading">29</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/30.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/30.jpg"><span class="description"><span class="description-heading">30</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/31.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/31.jpg"><span class="description"><span class="description-heading">31</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/32.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/32.jpg"><span class="description"><span class="description-heading">32</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/33.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/33.jpg"><span class="description"><span class="description-heading">33</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/34.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/34.jpg"><span class="description"><span class="description-heading">34</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/35.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/35.jpg"><span class="description"><span class="description-heading">35</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/36.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/36.jpg"><span class="description"><span class="description-heading">36</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/37.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/37.jpg"><span class="description"><span class="description-heading">37</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/38.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/38.jpg"><span class="description"><span class="description-heading">38</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/39.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/39.jpg"><span class="description"><span class="description-heading">39</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/40.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/40.jpg"><span class="description"><span class="description-heading">40</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/41.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/41.jpg"><span class="description"><span class="description-heading">41</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/42.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/42.jpg"><span class="description"><span class="description-heading">42</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/43.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/43.jpg"><span class="description"><span class="description-heading">43</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/44.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/44.jpg"><span class="description"><span class="description-heading">44</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/45.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/45.jpg"><span class="description"><span class="description-heading">45</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/46.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/46.jpg"><span class="description"><span class="description-heading">46</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/47.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/47.jpg"><span class="description"><span class="description-heading">47</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/48.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/48.jpg"><span class="description"><span class="description-heading">48</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/49.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/49.jpg"><span class="description"><span class="description-heading">49</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/50.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/50.jpg"><span class="description"><span class="description-heading">50</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/51.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/51.jpg"><span class="description"><span class="description-heading">51</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/52.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/52.jpg"><span class="description"><span class="description-heading">52</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/53.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/53.jpg"><span class="description"><span class="description-heading">53</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/54.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/54.jpg"><span class="description"><span class="description-heading">54</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/55.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/55.jpg"><span class="description"><span class="description-heading">55</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/56.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/56.jpg"><span class="description"><span class="description-heading">56</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/57.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/57.jpg"><span class="description"><span class="description-heading">57</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/58.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/58.jpg"><span class="description"><span class="description-heading">58</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/59.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/59.jpg"><span class="description"><span class="description-heading">59</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/60.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/60.jpg"><span class="description"><span class="description-heading">60</span></span></a></div>
+			    <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/61.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/61.jpg"><span class="description"><span class="description-heading">61</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/62.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/62.jpg"><span class="description"><span class="description-heading">62</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/63.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/63.jpg"><span class="description"><span class="description-heading">63</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/64.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/64.jpg"><span class="description"><span class="description-heading">64</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/65.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/65.jpg"><span class="description"><span class="description-heading">65</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/66.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/66.jpg"><span class="description"><span class="description-heading">66</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/67.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/67.jpg"><span class="description"><span class="description-heading">67</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/68.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/68.jpg"><span class="description"><span class="description-heading">68</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/69.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/69.jpg"><span class="description"><span class="description-heading">69</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/70.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/70.jpg"><span class="description"><span class="description-heading">70</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/71.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/71.jpg"><span class="description"><span class="description-heading">71</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/72.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/72.jpg"><span class="description"><span class="description-heading">72</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/73.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/73.jpg"><span class="description"><span class="description-heading">73</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/74.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/74.jpg"><span class="description"><span class="description-heading">74</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/75.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/75.jpg"><span class="description"><span class="description-heading">75</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/76.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/76.jpg"><span class="description"><span class="description-heading">76</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/77.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/77.jpg"><span class="description"><span class="description-heading">77</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/78.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/78.jpg"><span class="description"><span class="description-heading">78</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/79.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/79.jpg"><span class="description"><span class="description-heading">79</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/80.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/80.jpg"><span class="description"><span class="description-heading">80</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/81.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/81.jpg"><span class="description"><span class="description-heading">81</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/82.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/82.jpg"><span class="description"><span class="description-heading">82</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/83.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/83.jpg"><span class="description"><span class="description-heading">83</span></span></a></div>
+                <div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/84.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/84.jpg"><span class="description"><span class="description-heading">84</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/85.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/85.jpg"><span class="description"><span class="description-heading">85</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/86.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/86.jpg"><span class="description"><span class="description-heading">86</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/87.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/87.jpg"><span class="description"><span class="description-heading">87</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/88.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/88.jpg"><span class="description"><span class="description-heading">88</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/89.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/89.jpg"><span class="description"><span class="description-heading">89</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/90.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/90.jpg"><span class="description"><span class="description-heading">90</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/91.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/91.jpg"><span class="description"><span class="description-heading">91</span></span></a></div>
+				<div class="col-md-6 col-lg-2 item zoom-on-hover d-block m-auto p-1 border rounded-lg "><a href="static/assets/img/entry/92.jpg" data-lightbox="event"><img class="img-fluid image" src="static/assets/img/entry/92.jpg"><span class="description"><span class="description-heading">92</span></span></a></div>
+            
+			</div>
+        </section>
+    </main>
+    <footer class="page-footer" style="padding-top: 15px;">
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary pulse animated infinite dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-top: 5px;height: 40px;width: 100px;font-family: Abel, sans-serif;font-size: 20px;">
+              VOTE
+            </button>
+           
+                <form action="{% url 'index' %}" method="POST" class="dropdown-menu p-2"  >
+                {% csrf_token %}
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" id="name" name="name" maxlength = "20" >
+                    </div>
+                
+                    <div class="form-group">
+                        <label>Image Number</label>
+                        <input type="text" class="form-control"  id="img_number" name="img_number">
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary" id="btn_submit">Submit</button>
+                </form>    
+                        
+             
+            </div>
+        <div>
+        <hr>
+
+            <p style="padding-top: 50px;">Contact us for support and suggestions</p>
+        </div><div>
+<iframe src="https://discordapp.com/widget?id=700346902364815370&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+</div>
+        <div class="container">
+            <div class="social-icons"><a class="text-dark" href="https://www.instagram.com/asas_cs_club/"><i class="icon ion-social-instagram"></i></a></div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="{% static 'assets/js/script.min.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.min.js' %}"></script>
+</body>
+
+</html>
