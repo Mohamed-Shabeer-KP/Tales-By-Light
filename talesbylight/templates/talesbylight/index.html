@@ -34,7 +34,12 @@
                 {{ message }}
                 {% endfor %}
             {% else %}
-                Welcome to Tales by light - Photo Contest conducted as part of Zreyas quarantine fest. Please vote at the end.
+                <pre>
+                Welcome to Tales by Light - Photo contest conducted as part of Zreyas quarantine fest.
+                Winners :
+                    1. Tintu Rosmin - KHSCI5MCA15119 - Image No : 40 
+                    2. Sona Suresh - KHMCU3LG17028 - Image No : 44 
+                    3. Gowri Keerthana - KHSCI5MCA17030 - Image No : 42 </pre>
             {% endif %}
             
             </span></div>
@@ -48,7 +53,7 @@
     <footer class="page-footer" style="padding-top: 15px;">
 
         <div class="btn-group">
-            <button type="button" class="btn btn-primary pulse animated infinite dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-top: 5px;height: 40px;width: 100px;font-family: Abel, sans-serif;font-size: 20px;">
+            <button type="button" class="btn btn-primary pulse animated infinite dropdown-toggle" data-toggle="tooltip" data-placement="bottom" title="Voting Ended" aria-haspopup="true" aria-expanded="false" style="padding-top: 5px;height: 40px;width: 100px;font-family: Abel, sans-serif;font-size: 20px;" disabled>
               VOTE
             </button>
            
@@ -64,7 +69,7 @@
                         <input type="text" class="form-control"  id="img_number" name="img_number">
                     </div>
                    
-                    <button type="submit" class="btn btn-primary" id="btn_submit">Submit</button>
+                    <button type="button" class="btn btn-primary" id="btn_submit" >Submit</button>
                 </form>    
                         
              
