@@ -9,6 +9,10 @@ from .models import voteData
 import collections
 
 def index(request):
+    context={
+        'iterator': range(1,93)
+        }
+    
     if request.method == "POST" :
         if request.POST.get("name") and request.POST.get("img_number"):
             name = request.POST.get("name")
@@ -17,9 +21,10 @@ def index(request):
             v.save()
 
             messages.info(request, 'Thank you for voting.')
-        return render(request,'talesbylight/index.html')
+
+        return render(request,'talesbylight/index.html',context)
     else :
-        return render(request,'talesbylight/index.html')
+        return render(request,'talesbylight/index.html',context)
 
 def vote_table(request):
     q_result = voteData.objects.all()
